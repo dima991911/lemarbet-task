@@ -1,0 +1,145 @@
+.footer {
+  padding-top: 55px;
+  background-image: url("../../img/footer_bg.png");
+  background-size: cover;
+  color: white;
+
+  &-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+
+    @media screen and(max-width: 968px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__h4 {
+    font-family: Berlin;
+    font-size: 20px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+  }
+
+  &-section {
+    width: 32%;
+
+    @media screen and(max-width: 968px) {
+      width: 45%;
+      margin-bottom: 25px;
+    }
+
+    @media screen and(max-width: 560px) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &-copyright {
+    text-align: right;
+    font-size: 11px;
+    font-family: Verdana;
+    color: $gray_link_footer;
+    padding: 15px 0;
+  }
+}
+
+.from {
+  &-posts {
+    margin-left: 13px;
+
+    @media screen and(max-width: 560px) {
+      margin-left: 0;
+    }
+  }
+
+  &-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    &__avatar {
+      margin-right: 12px;
+      img {
+        border: 4px solid $gray_footer;
+      }
+    }
+
+    &__description {
+      font-family: Verdana;
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+
+    &__footer {
+      display: block;
+      font-style: italic;
+      color: $gray_link_footer;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.latest {
+  font-family: Berlin;
+  font-weight: lighter;
+
+  &-post {
+    margin-bottom: 25px;
+
+    &__description {
+      font-style: italic;
+      margin: 0;
+    }
+
+    &__link {
+      color: $red;
+      display: block;
+      font-style: italic;
+    }
+
+    &__date {
+      font-style: italic;
+      color: $gray_link_footer;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-about {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+
+  &-logo {
+    font-family: Berlin;
+    margin-bottom: 25px;
+
+    &__name {
+      font-weight: 300;
+      margin: 0;
+      font-size: 36px;
+    }
+
+    &__slogan {
+      font-weight: lighter;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__description {
+    font-family: Verdana;
+    line-height: 24px;
+    font-size: 11px;
+  }
+}
